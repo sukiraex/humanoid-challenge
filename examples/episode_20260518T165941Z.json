@@ -1,0 +1,644 @@
+{
+  "success": true,
+  "steps": 9,
+  "total_reward": 0.92,
+  "terminated": true,
+  "truncated": false,
+  "turns": [
+    {
+      "turn": 1,
+      "observation": {
+        "task": "Pick up the key (k), unlock the locked door (D) in front of you, then reach the goal (G).",
+        "step": 1,
+        "max_steps": 30,
+        "position": [
+          2,
+          1
+        ],
+        "facing": "north",
+        "inventory": [],
+        "local_view": [
+          [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+          ],
+          [
+            "#",
+            "#",
+            "#",
+            "#",
+            "#"
+          ],
+          [
+            "#",
+            ".",
+            "@",
+            ".",
+            "#"
+          ],
+          [
+            "#",
+            "D",
+            ".",
+            "G",
+            "#"
+          ],
+          [
+            "#",
+            "#",
+            "#",
+            "#",
+            "#"
+          ]
+        ],
+        "feedback": "Moved east.",
+        "done": false,
+        "success": false,
+        "full_map": null,
+        "metadata": {
+          "keys_held": [],
+          "entity_count": 2
+        }
+      },
+      "decision": {
+        "reasoning": "Mock policy step 1: executing move_east.",
+        "action_id": "move_east"
+      },
+      "reward": -0.01,
+      "terminated": false,
+      "truncated": false,
+      "map": "#####\n#.^.#\n#D.G#\n#####"
+    },
+    {
+      "turn": 2,
+      "observation": {
+        "task": "Pick up the key (k), unlock the locked door (D) in front of you, then reach the goal (G).",
+        "step": 2,
+        "max_steps": 30,
+        "position": [
+          2,
+          1
+        ],
+        "facing": "north",
+        "inventory": [
+          "main"
+        ],
+        "local_view": [
+          [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+          ],
+          [
+            "#",
+            "#",
+            "#",
+            "#",
+            "#"
+          ],
+          [
+            "#",
+            ".",
+            "@",
+            ".",
+            "#"
+          ],
+          [
+            "#",
+            "D",
+            ".",
+            "G",
+            "#"
+          ],
+          [
+            "#",
+            "#",
+            "#",
+            "#",
+            "#"
+          ]
+        ],
+        "feedback": "Picked up key 'main'.",
+        "done": false,
+        "success": false,
+        "full_map": null,
+        "metadata": {
+          "keys_held": [
+            "main"
+          ],
+          "entity_count": 1
+        }
+      },
+      "decision": {
+        "reasoning": "Mock policy step 2: executing pick_up.",
+        "action_id": "pick_up"
+      },
+      "reward": -0.01,
+      "terminated": false,
+      "truncated": false,
+      "map": "#####\n#.^.#\n#D.G#\n#####"
+    },
+    {
+      "turn": 3,
+      "observation": {
+        "task": "Pick up the key (k), unlock the locked door (D) in front of you, then reach the goal (G).",
+        "step": 3,
+        "max_steps": 30,
+        "position": [
+          1,
+          1
+        ],
+        "facing": "north",
+        "inventory": [
+          "main"
+        ],
+        "local_view": [
+          [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+          ],
+          [
+            " ",
+            "#",
+            "#",
+            "#",
+            "#"
+          ],
+          [
+            " ",
+            "#",
+            "@",
+            ".",
+            "."
+          ],
+          [
+            " ",
+            "#",
+            "D",
+            ".",
+            "G"
+          ],
+          [
+            " ",
+            "#",
+            "#",
+            "#",
+            "#"
+          ]
+        ],
+        "feedback": "Moved west.",
+        "done": false,
+        "success": false,
+        "full_map": null,
+        "metadata": {
+          "keys_held": [
+            "main"
+          ],
+          "entity_count": 1
+        }
+      },
+      "decision": {
+        "reasoning": "Mock policy step 3: executing move_west.",
+        "action_id": "move_west"
+      },
+      "reward": -0.01,
+      "terminated": false,
+      "truncated": false,
+      "map": "#####\n#^..#\n#D.G#\n#####"
+    },
+    {
+      "turn": 4,
+      "observation": {
+        "task": "Pick up the key (k), unlock the locked door (D) in front of you, then reach the goal (G).",
+        "step": 4,
+        "max_steps": 30,
+        "position": [
+          1,
+          1
+        ],
+        "facing": "east",
+        "inventory": [
+          "main"
+        ],
+        "local_view": [
+          [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+          ],
+          [
+            " ",
+            "#",
+            "#",
+            "#",
+            "#"
+          ],
+          [
+            " ",
+            "#",
+            "@",
+            ".",
+            "."
+          ],
+          [
+            " ",
+            "#",
+            "D",
+            ".",
+            "G"
+          ],
+          [
+            " ",
+            "#",
+            "#",
+            "#",
+            "#"
+          ]
+        ],
+        "feedback": "Turned right; now facing east.",
+        "done": false,
+        "success": false,
+        "full_map": null,
+        "metadata": {
+          "keys_held": [
+            "main"
+          ],
+          "entity_count": 1
+        }
+      },
+      "decision": {
+        "reasoning": "Mock policy step 4: executing turn_right.",
+        "action_id": "turn_right"
+      },
+      "reward": -0.01,
+      "terminated": false,
+      "truncated": false,
+      "map": "#####\n#>..#\n#D.G#\n#####"
+    },
+    {
+      "turn": 5,
+      "observation": {
+        "task": "Pick up the key (k), unlock the locked door (D) in front of you, then reach the goal (G).",
+        "step": 5,
+        "max_steps": 30,
+        "position": [
+          1,
+          1
+        ],
+        "facing": "south",
+        "inventory": [
+          "main"
+        ],
+        "local_view": [
+          [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+          ],
+          [
+            " ",
+            "#",
+            "#",
+            "#",
+            "#"
+          ],
+          [
+            " ",
+            "#",
+            "@",
+            ".",
+            "."
+          ],
+          [
+            " ",
+            "#",
+            "D",
+            ".",
+            "G"
+          ],
+          [
+            " ",
+            "#",
+            "#",
+            "#",
+            "#"
+          ]
+        ],
+        "feedback": "Turned right; now facing south.",
+        "done": false,
+        "success": false,
+        "full_map": null,
+        "metadata": {
+          "keys_held": [
+            "main"
+          ],
+          "entity_count": 1
+        }
+      },
+      "decision": {
+        "reasoning": "Mock policy step 5: executing turn_right.",
+        "action_id": "turn_right"
+      },
+      "reward": -0.01,
+      "terminated": false,
+      "truncated": false,
+      "map": "#####\n#v..#\n#D.G#\n#####"
+    },
+    {
+      "turn": 6,
+      "observation": {
+        "task": "Pick up the key (k), unlock the locked door (D) in front of you, then reach the goal (G).",
+        "step": 6,
+        "max_steps": 30,
+        "position": [
+          1,
+          1
+        ],
+        "facing": "south",
+        "inventory": [
+          "main"
+        ],
+        "local_view": [
+          [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+          ],
+          [
+            " ",
+            "#",
+            "#",
+            "#",
+            "#"
+          ],
+          [
+            " ",
+            "#",
+            "@",
+            ".",
+            "."
+          ],
+          [
+            " ",
+            "#",
+            "d",
+            ".",
+            "G"
+          ],
+          [
+            " ",
+            "#",
+            "#",
+            "#",
+            "#"
+          ]
+        ],
+        "feedback": "Unlocked door with key 'main'.",
+        "done": false,
+        "success": false,
+        "full_map": null,
+        "metadata": {
+          "keys_held": [
+            "main"
+          ],
+          "entity_count": 1
+        }
+      },
+      "decision": {
+        "reasoning": "Mock policy step 6: executing use.",
+        "action_id": "use"
+      },
+      "reward": -0.01,
+      "terminated": false,
+      "truncated": false,
+      "map": "#####\n#v..#\n#d.G#\n#####"
+    },
+    {
+      "turn": 7,
+      "observation": {
+        "task": "Pick up the key (k), unlock the locked door (D) in front of you, then reach the goal (G).",
+        "step": 7,
+        "max_steps": 30,
+        "position": [
+          1,
+          2
+        ],
+        "facing": "south",
+        "inventory": [
+          "main"
+        ],
+        "local_view": [
+          [
+            " ",
+            "#",
+            "#",
+            "#",
+            "#"
+          ],
+          [
+            " ",
+            "#",
+            ".",
+            ".",
+            "."
+          ],
+          [
+            " ",
+            "#",
+            "@",
+            ".",
+            "G"
+          ],
+          [
+            " ",
+            "#",
+            "#",
+            "#",
+            "#"
+          ],
+          [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+          ]
+        ],
+        "feedback": "Moved south.",
+        "done": false,
+        "success": false,
+        "full_map": null,
+        "metadata": {
+          "keys_held": [
+            "main"
+          ],
+          "entity_count": 1
+        }
+      },
+      "decision": {
+        "reasoning": "Mock policy step 7: executing move_south.",
+        "action_id": "move_south"
+      },
+      "reward": -0.01,
+      "terminated": false,
+      "truncated": false,
+      "map": "#####\n#...#\n#v.G#\n#####"
+    },
+    {
+      "turn": 8,
+      "observation": {
+        "task": "Pick up the key (k), unlock the locked door (D) in front of you, then reach the goal (G).",
+        "step": 8,
+        "max_steps": 30,
+        "position": [
+          2,
+          2
+        ],
+        "facing": "south",
+        "inventory": [
+          "main"
+        ],
+        "local_view": [
+          [
+            "#",
+            "#",
+            "#",
+            "#",
+            "#"
+          ],
+          [
+            "#",
+            ".",
+            ".",
+            ".",
+            "#"
+          ],
+          [
+            "#",
+            "d",
+            "@",
+            "G",
+            "#"
+          ],
+          [
+            "#",
+            "#",
+            "#",
+            "#",
+            "#"
+          ],
+          [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+          ]
+        ],
+        "feedback": "Moved east.",
+        "done": false,
+        "success": false,
+        "full_map": null,
+        "metadata": {
+          "keys_held": [
+            "main"
+          ],
+          "entity_count": 1
+        }
+      },
+      "decision": {
+        "reasoning": "Mock policy step 8: executing move_east.",
+        "action_id": "move_east"
+      },
+      "reward": -0.01,
+      "terminated": false,
+      "truncated": false,
+      "map": "#####\n#...#\n#dvG#\n#####"
+    },
+    {
+      "turn": 9,
+      "observation": {
+        "task": "Pick up the key (k), unlock the locked door (D) in front of you, then reach the goal (G).",
+        "step": 9,
+        "max_steps": 30,
+        "position": [
+          3,
+          2
+        ],
+        "facing": "south",
+        "inventory": [
+          "main"
+        ],
+        "local_view": [
+          [
+            "#",
+            "#",
+            "#",
+            "#",
+            " "
+          ],
+          [
+            ".",
+            ".",
+            ".",
+            "#",
+            " "
+          ],
+          [
+            "d",
+            ".",
+            "@",
+            "#",
+            " "
+          ],
+          [
+            "#",
+            "#",
+            "#",
+            "#",
+            " "
+          ],
+          [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+          ]
+        ],
+        "feedback": "Goal reached!",
+        "done": true,
+        "success": true,
+        "full_map": null,
+        "metadata": {
+          "keys_held": [
+            "main"
+          ],
+          "entity_count": 1
+        }
+      },
+      "decision": {
+        "reasoning": "Mock policy step 9: executing move_east.",
+        "action_id": "move_east"
+      },
+      "reward": 1.0,
+      "terminated": true,
+      "truncated": false,
+      "map": "#####\n#...#\n#d.v#\n#####"
+    }
+  ]
+}

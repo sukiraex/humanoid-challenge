@@ -18,3 +18,7 @@ build/
 # Editor
 .vscode/
 .idea/
+
+# Agent run logs (keep examples/)
+logs/
+.env
