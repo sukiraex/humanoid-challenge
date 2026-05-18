@@ -7,7 +7,8 @@ from virtual_world.agent.llm import (
     OpenAILLMClient,
     create_llm_client,
 )
-from virtual_world.agent.loop import AgentLoop, EpisodeResult, TurnRecord
+from virtual_world.agent.loop import AgentLoop
+from virtual_world.agent.records import EpisodeResult, TurnRecord
 from virtual_world.agent.schema import AgentDecision
 from virtual_world.agent.scenarios import Scenario, get_scenario
 

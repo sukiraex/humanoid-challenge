@@ -2,7 +2,35 @@
 
 Production-oriented LLM agent harness for a text-based grid world. Built incrementally; see milestones below.
 
-## Step 3 (current): LLM agent core
+## Step 4 (current): Live CLI dashboard
+
+A Rich-powered terminal dashboard shows the map, agent reasoning, chosen action, and environment feedback in real time.
+
+### Install dashboard support
+
+```bash
+pip install -e ".[dashboard]"
+# or: pip install -e ".[all]"
+```
+
+### Live run (mock or real LLM)
+
+```bash
+vw-agent --scenario key_door --provider mock --live
+vw-agent --scenario key_door --provider openai --live --delay 0.5
+```
+
+### Replay a saved episode log
+
+```bash
+vw-agent --replay examples/episode_20260518T165941Z.json --delay 0.4
+```
+
+Press `Ctrl+C` to exit. Episode JSON logs still save to `logs/` unless `--no-log`.
+
+---
+
+## Step 3: LLM agent core
 
 The agent observes the world, reasons with chain-of-thought JSON, and selects actions in a loop until success or step limit.
 
@@ -89,5 +117,5 @@ Typed 2D grid with walls, goals, keys, locked doors, and obstacles. Maps are ASC
 
 1. Grid world
 2. Gym-like harness
-3. **LLM agent core** (this step)
-4. CLI dashboard / visualizer
+3. LLM agent core
+4. **Live CLI dashboard** (this step)
